@@ -3,31 +3,45 @@ package Principal;
 import java.util.Random;
 
 public class CuerpoCuerpoGuerrero implements Guerrero{
+
     public String tipoPersonaje() {
-        return null;
+
+        switch ((int)(Math.random()*2+1)){
+            case 1:
+                return "Espada";
+            case 2:
+                return "Lanza";
+            default:
+                return "Espada";
+        }
+
     }
 
     public int defVida(String tipoPersonaje) {
-        //Random random = new Random();
-        //int vida = random.nextInt(100-150);
 
+        if(tipoPersonaje.equals("Espada")){
+            return (int)(Math.random()*150+130);
+        }else{
+            return (int)(Math.random()*130+100);
+        }
 
-        return (int)(Math.random()*150+100);
     }
 
     public int defDaño() {
-        //Random random = new Random();
-        //int vida = random.nextInt(100-150);
-        int vida = (int)(Math.random()*150+100);
-
-        return 0;
+        return (int)(Math.random()*30+15);
     }
 
     public int defVelocidad() {
-        return 0;
+        return (int)(Math.random()*10+5);
     }
 
-    public int defAlcance(){
-        return 0;
+    public int defAlcance(String tipoPersonaje){
+
+        if(tipoPersonaje.equals("Espada")){
+            return 1;
+        }else{
+            return 2;
+        }
+
     }
 }

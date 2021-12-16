@@ -2,19 +2,23 @@ package Principal;
 
 public class CuerpoCuerpoMaquina implements Maquina{
 
-    public int defVida() {
-        return 0;
+    public String tipoMaquina() {
+        return "Ariete";
     }
 
-    public int defDaño() {
-        return 0;
+    public int defVida(String tipoMaquina) {
+        return (int)(Math.random()*350+250);
+    }
+
+    public int defDaño(String tipoMaquina) {
+        return (int)(Math.random()*70+60);
     }
 
     public int defVelocidad() {
-        return 0;
+        return (int)(Math.random()*5+1);
     }
 
-    public int defAlcance(){
-        return 0;
+    public int defAlcance(String tipoMaquina){
+        return 1;
     }
 }
