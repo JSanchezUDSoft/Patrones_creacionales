@@ -6,7 +6,7 @@ public class CuerpoCuerpoMaquina implements Maquina{
     private int vida;
     private int daño;
     private int velocidad;
-
+    private int alcance;
 
     public int defVida() {
         return 0;
@@ -17,6 +17,10 @@ public class CuerpoCuerpoMaquina implements Maquina{
     }
 
     public int defVelocidad() {
+        return 0;
+    }
+
+    public int defAlcance(){
         return 0;
     }
 }

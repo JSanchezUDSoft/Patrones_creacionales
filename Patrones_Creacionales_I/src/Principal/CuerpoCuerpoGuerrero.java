@@ -6,6 +6,7 @@ public class CuerpoCuerpoGuerrero implements Guerrero{
     private int vida;
     private int daño;
     private int velocidad;
+    private int alcance;
 
 
     public int defVida() {
@@ -17,6 +18,10 @@ public class CuerpoCuerpoGuerrero implements Guerrero{
     }
 
     public int defVelocidad() {
+        return 0;
+    }
+
+    public int defAlcance(){
         return 0;
     }
 }
