@@ -1,6 +1,6 @@
 package Principal;
 
-public class CuerpoCuerpoGuerrero implements Guerrero{
+public class LargaDistanciaGuerrero implements Guerrero{
 
     public int Vida() {
         return 0;
