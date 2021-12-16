@@ -1,6 +1,6 @@
 package Principal;
 
-public class LargaDistanciaMaquina {
+public class LargaDistanciaMaquina implements Maquina{
 
     private String  nombre;
     private int     vida;
