@@ -2,11 +2,6 @@ package Principal;
 
 public class LargaDistanciaMaquina implements Maquina{
 
-    private String  nombre;
-    private int     vida;
-    private int     velocidad;
-    private int     alcance;
-
     public int defVida(){
         return 0;
     }
