@@ -2,15 +2,24 @@ package Principal;
 
 public class LargaDistanciaMaquina {
 
-    public int Vida(){
+    private String  nombre;
+    private int     vida;
+    private int     velocidad;
+    private int     alcance;
+
+    public int defVida(){
         return 0;
     }
 
-    public int Daño(){
+    public int defDaño(){
         return 0;
     }
 
-    public int Velocidad(){
+    public int defVelocidad(){
+        return 0;
+    }
+
+    public int defAlcance() {
         return 0;
     }
 }
