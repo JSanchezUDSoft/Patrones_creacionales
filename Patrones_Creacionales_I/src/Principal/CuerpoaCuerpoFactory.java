@@ -4,12 +4,12 @@ public class CuerpoaCuerpoFactory implements MiliciaFactory{
 
     public void crearGuerrero() {
         CuerpoCuerpoGuerrero guerrero = new CuerpoCuerpoGuerrero();
-        String personaje = guerrero.tipoPersonaje();
-        System.out.println(personaje);
-        System.out.println("\t"+ guerrero.defVida(personaje));
+        String tipo = guerrero.tipoPersonaje();
+        System.out.println(tipo);
+        System.out.println("\t"+ guerrero.defVida(tipo));
         System.out.println("\t"+ guerrero.defDaño());
         System.out.println("\t"+ guerrero.defVelocidad());
-        System.out.println("\t"+ guerrero.defAlcance(personaje));
+        System.out.println("\t"+ guerrero.defAlcance(tipo));
 
     }
 
