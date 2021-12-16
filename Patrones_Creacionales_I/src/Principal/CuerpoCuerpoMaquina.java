@@ -1,15 +1,16 @@
 package Principal;
 
 public class CuerpoCuerpoMaquina implements Maquina{
-    public int Vida(){
+
+    public int defVida() {
         return 0;
     }
 
-    public int Daño(){
+    public int defDaño() {
         return 0;
     }
 
-    public int Velocidad(){
+    public int defVelocidad() {
         return 0;
     }
 }
