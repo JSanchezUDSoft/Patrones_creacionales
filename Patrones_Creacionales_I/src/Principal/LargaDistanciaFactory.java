@@ -14,5 +14,12 @@ public class LargaDistanciaFactory implements MiliciaFactory{
 
     public void crearMaquina() {
         LargaDistanciaMaquina maquina = new LargaDistanciaMaquina();
+        String tipo = maquina.tipoMaquina();
+        System.out.println(tipo);
+        System.out.println("\t"+ maquina.defVida(tipo));
+        System.out.println("\t"+ maquina.defDaño(tipo));
+        System.out.println("\t"+ maquina.defVelocidad());
+        System.out.println("\t"+ maquina.defAlcance(tipo));
     }
+
 }
