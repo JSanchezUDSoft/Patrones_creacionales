@@ -2,7 +2,7 @@ package Principal;
 
 public class LargaDistanciaGuerrero implements Guerrero{
 
-    public int defVida() {
+    public int defVida(String tipoPersonaje) {
         return 0;
     }
 

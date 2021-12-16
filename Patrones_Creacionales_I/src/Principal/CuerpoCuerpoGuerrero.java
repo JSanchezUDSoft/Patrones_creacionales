@@ -1,12 +1,25 @@
 package Principal;
 
-public class CuerpoCuerpoGuerrero implements Guerrero{
+import java.util.Random;
 
-    public int defVida() {
-        return 0;
+public class CuerpoCuerpoGuerrero implements Guerrero{
+    public String tipoPersonaje() {
+        return null;
+    }
+
+    public int defVida(String tipoPersonaje) {
+        //Random random = new Random();
+        //int vida = random.nextInt(100-150);
+
+
+        return (int)(Math.random()*150+100);
     }
 
     public int defDaño() {
+        //Random random = new Random();
+        //int vida = random.nextInt(100-150);
+        int vida = (int)(Math.random()*150+100);
+
         return 0;
     }
 
