@@ -6,7 +6,7 @@ public class CuerpoCuerpoGuerrero implements Guerrero{
 
     public String tipoPersonaje() {
         try {
-            switch ((int) (Math.random() * 2 + 1)) {
+            switch ((int) (Math.random() * ( 2 - 1 ))) {
                 case 1:
                     return "Espada";
                 case 2:
@@ -24,9 +24,9 @@ public class CuerpoCuerpoGuerrero implements Guerrero{
     public int defVida(String tipoPersonaje) {
         try {
             if (tipoPersonaje.equals("Espada")) {
-                return (int) (Math.random() * 150 + 130);
+                return (int) (Math.random() * (150 - 130));
             } else {
-                return (int) (Math.random() * 130 + 100);
+                return (int) (Math.random() * (130 - 100));
             }
         }
         catch(Exception e){
