@@ -24,9 +24,9 @@ public class CuerpoCuerpoGuerrero implements Guerrero{
     public int defVida(String tipoPersonaje) {
         try {
             if (tipoPersonaje.equals("Espada")) {
-                return (int) (Math.random() * ((150-130+1) - 130));
+                return (int) (Math.random() * (150-130+1) - 130);
             } else {
-                return (int) (Math.random() * ((130-100+1) - 100));
+                return (int) (Math.random() * (130-100+1) - 100);
             }
         }
         catch(Exception e){
