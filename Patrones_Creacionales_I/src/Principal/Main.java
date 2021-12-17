@@ -15,7 +15,7 @@ public class Main {
             while (menu == true) {
                 System.out.println("\n1. Personaje cuerpo a cuerpo");
                 System.out.println("2. Personaje a larga distancia");
-                System.out.println("3. Salir2");
+                System.out.println("3. Salir");
                 opcion = txt.nextLine();
 
                 switch (opcion) {
