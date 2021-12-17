@@ -22,9 +22,9 @@ public class LargaDistanciaGuerrero implements Guerrero{
     public int defVida(String tipoPersonaje) {
         try {
             if (tipoPersonaje.equals("Arco")) {
-                return (int) (Math.random() * 130 + 100);
+                return (int) (Math.random() * (130-100+1) + 100);
             } else {
-                return (int) (Math.random() * 100 + 90);
+                return (int) (Math.random() * (100-90+1) + 90);
             }
         }
         catch(Exception e){
@@ -35,7 +35,7 @@ public class LargaDistanciaGuerrero implements Guerrero{
 
     public int defDaño() {
         try {
-            return (int) (Math.random() * 20 + 15);
+            return (int) (Math.random() * (20-15+1) + 15);
         }
         catch(Exception e){
             System.out.println("Se presento un error en LargaDistanciaGuerrero.defDaño " + e);
@@ -45,7 +45,7 @@ public class LargaDistanciaGuerrero implements Guerrero{
 
     public int defVelocidad() {
         try {
-            return (int) (Math.random() * 15 + 10);
+            return (int) (Math.random() * (15-10+1) + 10);
         }
         catch(Exception e){
             System.out.println("Se presento un error en LargaDistanciaGuerrero.tipoVelocidad " + e);
@@ -56,9 +56,9 @@ public class LargaDistanciaGuerrero implements Guerrero{
     public int defAlcance(String tipoPersonaje) {
         try {
             if (tipoPersonaje.equals("Arco")) {
-                return (int) (Math.random() * 10 + 7);
+                return (int) (Math.random() * (10-7+1) + 7);
             } else {
-                return (int) (Math.random() * 13 + 9);
+                return (int) (Math.random() * (13-9+1) + 9);
             }
         }
         catch(Exception e){

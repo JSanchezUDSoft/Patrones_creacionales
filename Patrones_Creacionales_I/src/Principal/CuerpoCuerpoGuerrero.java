@@ -6,7 +6,7 @@ public class CuerpoCuerpoGuerrero implements Guerrero{
 
     public String tipoPersonaje() {
         try {
-            switch ((int) (Math.random() * ( 2 - 1 ))) {
+            switch ((int) (Math.random() * 2+1)) {
                 case 1:
                     return "Espada";
                 case 2:
@@ -24,9 +24,9 @@ public class CuerpoCuerpoGuerrero implements Guerrero{
     public int defVida(String tipoPersonaje) {
         try {
             if (tipoPersonaje.equals("Espada")) {
-                return (int) (Math.random() * (150 - 130));
+                return (int) (Math.random() * ((150-130+1) - 130));
             } else {
-                return (int) (Math.random() * (130 - 100));
+                return (int) (Math.random() * ((130-100+1) - 100));
             }
         }
         catch(Exception e){
@@ -38,7 +38,7 @@ public class CuerpoCuerpoGuerrero implements Guerrero{
 
     public int defDaño() {
         try {
-            return (int) (Math.random() * 30 + 15);
+            return (int) (Math.random() * (30-15+1) + 15);
         }
         catch(Exception e){
             System.out.println("Se presento un error en CuerpoCuerpoGuerrero.defDaño " + e);
@@ -48,7 +48,7 @@ public class CuerpoCuerpoGuerrero implements Guerrero{
 
     public int defVelocidad() {
         try {
-            return (int) (Math.random() * 10 + 5);
+            return (int) (Math.random() * (10-5+1) + 5);
         }
         catch(Exception e){
             System.out.println("Se presento un error en CuerpoCuerpoGuerrero.defVelocidad " + e);
