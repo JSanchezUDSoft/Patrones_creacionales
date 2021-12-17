@@ -3,22 +3,52 @@ package Principal;
 public class CuerpoCuerpoMaquina implements Maquina{
 
     public String tipoMaquina() {
+        try{
         return "Ariete";
+        }
+        catch(Exception e){
+            System.out.println("Se presento un error en CuerpoCuerpoMaquina.tipoMaquina " + e);
+            return "Error";
+        }
     }
 
     public int defVida(String tipoMaquina) {
-        return (int)(Math.random()*350+250);
+        try {
+            return (int) (Math.random() * 350 + 250);
+        }
+        catch(Exception e){
+            System.out.println("Se presento un error en CuerpoCuerpoMaquina.defVida " + e);
+            return 0;
+        }
     }
 
     public int defDaño(String tipoMaquina) {
-        return (int)(Math.random()*70+60);
+        try {
+            return (int) (Math.random() * 70 + 60);
+        }
+        catch(Exception e){
+            System.out.println("Se presento un error en CuerpoCuerpoMaquina.defDaño " + e);
+            return 0;
+        }
     }
 
     public int defVelocidad() {
-        return (int)(Math.random()*5+1);
+        try {
+            return (int) (Math.random() * 5 + 1);
+        }
+        catch(Exception e){
+            System.out.println("Se presento un error en CuerpoCuerpoMaquina.defVelocidad " + e);
+            return 0;
+        }
     }
 
     public int defAlcance(String tipoMaquina){
-        return 1;
+        try {
+            return 1;
+        }
+        catch(Exception e){
+            System.out.println("Se presento un error en CuerpoCuerpoMaquina.defDaño " + e);
+            return 0;
+        }
     }
 }
